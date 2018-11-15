@@ -11,5 +11,6 @@ char **parse(char *cmd) {
     for (int i = 0; copy; i++){
     	arr[i] = strsep(&copy, " ");
     }
+    free(copy);
     return arr;
 }
